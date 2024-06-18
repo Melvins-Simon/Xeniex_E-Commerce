@@ -3,13 +3,1459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xeniex Commerce</title>
-    <link rel="stylesheet" href="/src/output.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <meta name="Author" content="Melvins Simon Omari">
+    <meta name="title" content="Xeniex Kenya | Online Shopping for Fashion, Electronics, Phones, Beauty, Home &amp; More">
+    <meta name="description" content="Xeniex Kenya the #1 Online Store in Kenya ✓ Buy Phones, Laptops, Appliances, Clothes, TVs &amp; Home Essentials from Top Brands ✓ Best Prices in Kenya ✓ Online Shop You Can Trust ✓ Order Now and Enjoy Pay on Delivery!">
 
+    <!-- Link to main css file -->
+    <link rel="stylesheet" href="/src/output.css">
+
+    <!-- Link to Fonts.Google { Basic Icons } -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Font-Awesome CDN Link { Icons }-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Website Main Icon -->
+    <link rel="Icon" href="/src/assets/icons/logo.png">
+
+    <!-- Website Title -->
+    <title>Xeniex Kenya | Online Shopping for Fashion, Electronics, Phones, Beauty, Home & More</title>
    
+</head>
+<body class="relative -bg--color-black">
+    <!--=========== Header Section ==========-->
+    <div class=" w-full h-[6vh] -bg--color-orange overflow-hidden">
+        <div class="container w-[60%] mx-auto shrink-0">
+           <a href="#"> <img src="/src/assets/icons/KE_Generic_JA24_Clearance_0524_STB.gif" alt="Anninersary"></a>
+        </div>
+    </div>
+    
+    <div class="w-full h-[3.5vh] -bg--color-primary-hover2">
+        <div class="container w-[60%] h-full mx-auto flex items-center justify-start">
+            <a class="text-sm hover:underline bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out" href="#">Sell on Xeniex</a>
+
+            <span class="ml-[26rem] flex items-center justify-start gap-2">
+                <h1 class="animate-pulse bg-gradient-to-r  -from--color-white  to-orange-600 text-transparent bg-clip-text duration-300 ease-in-out cursor-default"><span class="-text--color-white">XE</span>NIEX</h1>
+                <a href="#"><img class="h-6 animate-spin" src="/src/assets/icons/logo.png" alt="logo"></a>
+            </span>
+               
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50">
+        <nav class="w-full h-[8vh] border-b -border-b--color-dark shadow-sm -shadow--color-dark -bg--color-bgrgba hover:-bg--color-primary-hover2 duration-300 ease-in-out backdrop-blur-xl">
+            <div class="container w-[60%] h-full mx-auto flex items-center justify-end">
+                <div class="flex justify-end items-center">
+                   <ul class="flex justify-between items-center space-x-12">
+                        <li>
+                            <a class="flex items-center justify-between gap-2">
+                            <span class="relative border border-solid -border--color-light rounded-md px-12">
+                                <input class="py-2 w-[22vw] bg-transparent  -text--color-white placeholder:font-normal font-bold" id="js-search" type="search" placeholder="Search products, brands and categories">
+                                
+                                <span class="material-symbols-outlined absolute top-0 bottom-0 left-2 my-auto text-white h-max">
+                                    search
+                                </span>
+
+                            </span>
+                            <label class="cursor-pointer px-3 py-2 -bg--color-orange text-white rounded-md hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out" for="js-search">SEARCH</label>
+                            </a>
+                        </li>
+
+                        <span class="flex justify-start items-center gap-1 px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
+                            <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Account</a></li>
+                            <span class="material-symbols-outlined -text--color-white cursor-pointer">
+                                keyboard_arrow_down
+                            </span>
+                        </span>
+                       <span class="flex justify-start items-center gap-1 px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
+                        <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Help</a></li>
+                            <span class="material-symbols-outlined -text--color-white cursor-pointer">
+                                keyboard_arrow_down
+                            </span>
+                       </span>
+                        <span class="px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
+                            <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Cart</a></li>
+                        </span>
+                   </ul>
+                </div>
+               
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!--=========== Main Section ===========-->
+    <main>
+
+    <!-- Home Section -->
+        <section class="relative">
+           <div class="container w-[60%] mx-auto h-max mt-4 flex flex-col justify-evenly items-center gap-4">
+
+            <!--=====================-->
+            <!--= First Sub-Section =-->
+            <!--=====================-->
+
+            <div class="grid grid-cols-[1fr_3fr_1fr] gap-4 h-max">
+                <!-- Left Navigations -->
+                <div class="h-full -bg--color-dark rounded-md">
+                    <ul class="flex flex-col py-1 px-8 h-full justify-evenly">
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                store
+                                </span>
+                                <a class="navlink" href="#">Official stores</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    smartphone
+                                </span>
+                                <a class="navlink" href="#">Phones &amp; Tablets</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    live_tv
+                                </span>
+                                <a class="navlink" href="#">TVs &amp; Audio</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    coffee_maker
+                                </span>
+                                <a class="navlink" href="#">Appliances</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    monitor_heart
+                                </span>
+                                <a class="navlink" href="#">Health &amp; Beauty</a>
+                            </li>
+                        </a>
+                            
+                       <a href="#">
+                        <li class="flex justify-start gap-2 items-center group">
+                            <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                real_estate_agent
+                            </span>
+                            <a class="navlink" href="#">Home &amp; Office</a>
+                        </li>
+                       </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    styler
+                                </span>
+                                <a class="navlink" href="#">Fashion</a>
+                            </li>
+                        </a>
+
+                       <a href="#">
+                        <li class="flex justify-start gap-2 items-center group">
+                            <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                devices
+                            </span>
+                            <a class="navlink" href="#">Computing</a>
+                        </li>
+                       </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    nutrition
+                                </span>
+                                <a class="navlink" href="#">Supermarket</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    smart_toy
+                                </span>
+                                <a class="navlink" href="#">Baby products</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    fitness_center
+                                </span>
+                                <a class="navlink" href="#">Sporting goods</a>
+                            </li>
+                        </a>
+
+                        <a href="#">
+                            <li class="flex justify-start gap-2 items-center group">
+                                <span class="material-symbols-outlined -text--color-amber group-hover:-text--color-white group-hover:duration-300 group-hover:ease-in-out ">
+                                    category
+                                </span>
+                                <a class="navlink" href="#">Other categories</a>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Middle Adverts -->
+                <div class="relative rounded-md bg-no-repeat bg-cover bg-center -bg--color-dark overflow-hidden">
+                    <a href="#"><img class="block w-full h-full rounded-md " src="/src/assets/icons/KE_Generic_JA24_Clearance_0524_S.gif " alt="Advert"></a>
+
+                    <a class="absolute group top-0 bottom-0 my-auto left-3 cursor-pointer h-[80%] w-[12%] flex items-center justify-start" >
+                        <img class="w-8 opacity-0  group-hover:opacity-100 duration-300 ease-in-out" src="/src/assets/icons/chevron-left.svg" alt="Nav-left">
+                    </a>
+
+                    <a class="absolute group top-0 bottom-0 my-auto right-3 cursor-pointer h-[80%] w-[12%] flex items-center justify-end" >
+                        <img class="w-8 opacity-0  group-hover:opacity-100 duration-300 ease-in-out" src="/src/assets/icons/chevron-right.svg" alt="Nav-right">
+                    </a>
+
+
+                    <a class="absolute group left-0 bottom-3 mx-auto right-0 h-[10%%] w-[30%] flex items-center justify-evenly " >
+                       
+                            <span class="ad-1 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                            <span class="ad-2 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                            <span class="ad-3 h-3 w-3 rounded-full cursor-pointer bg-orange-700"></span>
+                            <span class="ad-4 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                            <span class="ad-5 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                            <span class="ad-6 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                            <span class="ad-7 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                            <span class="ad-8 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                     
+                    </a>
+                </div>
+
+                <!-- Left Contacts -->
+                <div class="flex flex-col justify-evenly gap-4 items-center">
+                  <div class="-bg--color-dark w-full h-1/2 rounded-md flex flex-col justify-evenly overflow-hidden p-4 gap-3">
+                    <a href="#" class="flex justify-start gap-3 hover:shadow-[0px_0px_500px] hover:shadow-orange-400 p-1 rounded-md duration-300 ease-in-out">
+                        <span>
+                            <img class="w-10" src="/src/assets/icons/Webp.net-resizeimage-(1).png" alt="Help">                            
+                        </span>
+
+                        <span>
+                            <h3 class="text-sm -text--color-white">HELP CENTER</h3>
+                            <h3 class="text-[0.7rem] -text--color-white">Guide To Customer Care</h3>
+                        </span>
+                    </a>
+
+                    <a href="#" class="flex justify-start gap-3 hover:shadow-[0px_0px_500px] hover:shadow-orange-400 p-1 rounded-md duration-300 ease-in-out">
+                        <span>
+                            <img class="w-10" src="/src/assets/icons/icone-2-return.png" alt="Help">                            
+                        </span>
+
+                        <span>
+                            <h3 class="text-sm -text--color-white">EASY RETURN</h3>
+                            <h3 class="text-[0.7rem] -text--color-white">Quick refund</h3>
+                        </span>
+                    </a>
+
+                    <a href="#" class="flex justify-start gap-3 hover:shadow-[0px_0px_500px] hover:shadow-orange-400 p-1 rounded-md duration-300 ease-in-out">
+                        <span>
+                            <img class="w-10" src="/src/assets/icons/icone-2-payment.png" alt="Help">                            
+                        </span>
+
+                        <span>
+                            <h3 class="text-sm -text--color-white">SELL ON XENIEX</h3>
+                            <h3 class="text-[0.7rem] -text--color-white">Millions of Visitors</h3>
+                    </a>
+                  </div>
+                  
+                  <div class="-bg--color-dark w-full h-1/2 rounded-md overflow-hidden bg-cover bg-center bg-no-repeat">
+                    <a href="#">
+                        <img class="block w-full h-full rounded-md" src="/src/assets/icons/KE_JTS_Generic_0424_BF.gif" alt="Contacts">
+                    </a>
+
+                  </div>
+                </div>
+            </div>
+
+            <!--======================-->
+            <!--= Second Sub-Section =-->
+            <!--======================-->  
+
+            <div class="relative h-max w-full -bg--color-dark rounded-md p-3 ">
+
+                
+                <div class="container w-[90%] h-full mx-auto flex justify-evenly items-center flex-wrap gap-y-3">
+                    <!-- Advert Cards -->
+                    
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/icons/Jumia_Anniversary_Clearance_TN.gif" alt="AdvertLink">
+                        </a>                        
+                    </div>
+                   
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/icons/FlashSaleLP.png" alt="AdvertLink">
+                        </a>
+                    </div>
+
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/icons/Freedelivery.png" alt="AdvertLink">
+                        </a>
+                    </div>
+
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/icons/Delivery.png" alt="AdvertLink">
+                        </a>
+                    </div>
+
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/res/Televisions.png" alt="AdvertLink">
+                        </a>
+                    </div>
+
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/res/Smartphones.png" alt="AdvertLink">
+                        </a>
+                    </div>
+
+                    <div class="h-32 w-32 -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-105 duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-full" src="/src/assets/res/LargeAppliances.png" alt="AdvertLink">
+                        </a>
+                    </div>
+                </div>
+              
+
+                <!-- Navigation Icons -->
+                <a class="absolute group top-0 bottom-0 my-auto left-3 cursor-pointer h-[80%] w-[3%] flex items-center justify-start" >
+                    <img class="w-8 group-hover:w-10 duration-300 ease-in-out" src="/src/assets/icons/chevron-left.svg" alt="Nav-left">
+                </a>
+
+                <a class="absolute group top-0 bottom-0 my-auto right-3 cursor-pointer h-[80%] w-[3%] flex items-center justify-end" >
+                    <img class="w-8 group-hover:w-10 duration-300 ease-in-out" src="/src/assets/icons/chevron-right.svg" alt="Nav-right">
+                </a>
+
+            </div>
+
+            <!--=============================================-->
+            <!--= Third Sub-Section << Top Selling Items >> =-->
+            <!--=============================================-->  
+
+            <div class="relative h-max w-full -bg--color-dark rounded-md p-3 flex flex-col gap-6">
+                
+                <div class="flex justify-between items-center">
+                    <h3 class="-text--color-white text-lg cursor-default">Top Selling Items</h3>
+                    <a class="bgClip hover:font-bold hover:-text--color-white" href="#">SEE ALL</a>
+                </div>
+                
+                <div class="h-max flex justify-between items-center flex-wrap">
+                    <!-- Advert Cards -->
+                    
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(1).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(3).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -28%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Vitron V527 - 2.1 CH Multimedia Speaker, BT/USB/SD/FM - 9000W (1YR WRTY)</h3>   
+                                <h3 class="-text--color-white text-lg">Ksh 5,460</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 7,599</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(5).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -55%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Starlink Standard Actuated Kit</h3>                            
+                                <h3 class="-text--color-white text-lg">Ksh 45,000</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 100,000</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(18).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -4%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">XIAOMI Redmi 13C, 6.71"(4GB RAM+128GB Storage)5000mAh Dual Sim-Black</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 13,398</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 13,990</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(16).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -5%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">AILYONS FK-0301 Stainless Steel 1.8L Electric Kettle-Silver. (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 599</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 628</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a class="bg-red-400" href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(1).jpg" height="185px" width="185px" alt="AdvertLink">
+
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -32%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Vitron HTC4388FS - 43" Smart  Android Frameless TV - Black (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 19,499</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 28,599</h4>
+                            </span>                      
+                        </div>
+                    </a>
+                   
+                  
+                </div>              
+
+            </div>
+
+
+            <!--===================================================-->
+            <!--= Fouth Sub-Section << Flah Sales >>  =-->
+            <!--===================================================-->  
+
+            <div class="relative h-max w-full rounded-br-md rounded-bl-md -bg--color-dark flex flex-col gap-1">
+                
+                <div class="w-full py-3 -bg--color-black border border-solid -border--color-dark rounded-tl-md rounded-tr-md">
+                    <div class="flex justify-between items-center w-[90%] mx-auto">
+                    <h3 class="-text--color-white text-lg cursor-default">Flash Sales</h3>
+                    <h3 class="-text--color-white text-lg cursor-default">Time Left: <span class="font-bold">15h : 25m : 40s</span></h3>
+                    <a class="bgClip hover:font-bold hover:-text--color-white" href="#">SEE ALL</a>
+                </div>
+                </div>
+                
+                <div class="h-max flex justify-evenly items-center flex-wrap -bg--color-dark rounded-bl-md rounded-br-md px-2 pb-2">
+                    <!-- Advert Cards -->
+                    
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(11).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-[0.75rem] -text--color-light overflow-hidden">3 items remaining</span>
+                                    <span class="w-full  h-2 rounded-full -bg--color-gray flex justify-start items-center">
+                                        <span class="w-[15%]  h-2 -bg--color-amber rounded-tl-full rounded-bl-full"></span>
+                                    </span>
+                                </div>
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(42).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-[0.75rem] -text--color-light overflow-hidden">3 items remaining</span>
+                                    <span class="w-full  h-2 rounded-full -bg--color-gray flex justify-start items-center">
+                                        <span class="w-[15%]  h-2 -bg--color-amber rounded-tl-full rounded-bl-full"></span>
+                                    </span>
+                                </div>
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px] " src="/src/assets/res/1(6).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-[0.75rem] -text--color-light overflow-hidden">3 items remaining</span>
+                                    <span class="w-full  h-2 rounded-full -bg--color-gray flex justify-start items-center">
+                                        <span class="w-[15%]  h-2 -bg--color-amber rounded-tl-full rounded-bl-full"></span>
+                                    </span>
+                                </div>
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(7).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-[0.75rem] -text--color-light overflow-hidden">3 items remaining</span>
+                                    <span class="w-full  h-2 rounded-full -bg--color-gray flex justify-start items-center">
+                                        <span class="w-[15%]  h-2 -bg--color-amber rounded-tl-full rounded-bl-full"></span>
+                                    </span>
+                                </div>
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(10).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-[0.75rem] -text--color-light overflow-hidden">13 items remaining</span>
+                                    <span class="w-full  h-2 rounded-full -bg--color-gray flex justify-start items-center">
+                                        <span class="w-[35%]  h-2 -bg--color-success rounded-tl-full rounded-bl-full"></span>
+                                    </span>
+                                </div>
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(20).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-[0.75rem] -text--color-light overflow-hidden">1 items remaining</span>
+                                    <span class="w-full  h-2 rounded-full -bg--color-gray flex justify-start items-center">
+                                        <span class="w-[5%]  h-2 -bg--color-danger rounded-tl-full rounded-bl-full"></span>
+                                    </span>
+                                </div>
+                            </div>                           
+                           
+                        </div>
+                    </a>
+                   
+                  
+                </div>              
+
+            </div>
+
+            <!--=========================================================-->
+            <!--= Fifth Sub-Section << 12th Anniv. Clearance Deals   >> =-->
+            <!--=========================================================-->  
+
+            <div class="relative h-max w-full -bg--color-dark rounded-md p-3 flex flex-col gap-6">
+                
+                <div class="flex justify-between items-center">
+                    <h3 class="-text--color-white text-lg cursor-default">12th Anniversary Deals | Clearance</h3>
+                    <a class="bgClip hover:font-bold hover:-text--color-white" href="#">SEE ALL</a>
+                </div>
+                
+                <div class="h-max flex justify-between items-center flex-wrap">
+                    <!-- Advert Cards -->
+                    
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(12).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1.jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -28%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Vitron V527 - 2.1 CH Multimedia Speaker, BT/USB/SD/FM - 9000W (1YR WRTY)</h3>   
+                                <h3 class="-text--color-white text-lg">Ksh 5,460</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 7,599</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(14).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -55%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Starlink Standard Actuated Kit</h3>                            
+                                <h3 class="-text--color-white text-lg">Ksh 45,000</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 100,000</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(15).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -4%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">XIAOMI Redmi 13C, 6.71"(4GB RAM+128GB Storage)5000mAh Dual Sim-Black</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 13,398</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 13,990</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(16).jpg" height="185px" width="185px" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -5%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">AILYONS FK-0301 Stainless Steel 1.8L Electric Kettle-Silver. (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 599</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 628</h4>
+                            </span>                      
+                        </div>
+                    </a>
+
+                    <a class="bg-red-400" href="#">
+                        <div class="h-max w-[180px] cursor-pointer  rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-full" src="/src/assets/res/1(17).jpg" height="185px" width="185px" alt="AdvertLink">
+
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -32%
+                                </div>
+                            </a>  
+                            <span class="p-2">
+                                <h3 class="name">Vitron HTC4388FS - 43" Smart  Android Frameless TV - Black (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 19,499</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 28,599</h4>
+                            </span>                      
+                        </div>
+                    </a>
+                   
+                  
+                </div>              
+
+            </div>
+
+            <!--===========================================-->
+            <!--= Sixth Sub-Section << Half price shop >> =-->
+            <!--===========================================-->  
+
+            <div class="relative h-max w-full -bg--color-dark rounded-md">
+
+                <div class="w-full py-3 -bg--color-black border border-solid -border--color-dark rounded-tl-md rounded-tr-md">
+                    <div class="flex items-center justify-center">
+                    <h3 class="-text--color-white text-lg cursor-default">Half Shop Prics || 50% OFF</h3>
+                </div>
+                </div>
+                
+                <div class="container w-[90%] h-full p-2 mx-auto flex justify-evenly items-center flex-wrap gap-y-3">
+                    <!-- Advert Cards -->
+                    
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-32" src="/src/assets/res/Phones_Tabletss.png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">Phones</h3>                      
+                    </div>
+                   
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-32" src="/src/assets/res/Electronics.png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">TVs</h3>                      
+                    </div>
+
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-32" src="/src/assets/res/LargeAppliances(1).png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">Large Appliances</h3>                      
+                    </div>
+
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#" class="-bg--color-dark">
+                            <img class="block w-full h-32" src="/src/assets/res/BeautyRSV.png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">Beauty</h3>                      
+                    </div>
+
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-32" src="/src/assets/res/WomensFashion.png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">Women's Fashion</h3>                      
+                    </div>
+
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-32" src="/src/assets/res/MensFashion.png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">Men's Fashion</h3>                      
+                    </div>
+
+                    <div class="h-max w-32 flex flex-col gap-1 justify-center -bg--color-dark bg-center bg-cover bg-no-repeat rounded-md hover:scale-[1.02] hover:shadow-[0px_0px_10px] duration-100 ease-in-out overflow-hidden">
+                        <a href="#">
+                            <img class="block w-full h-32" src="/src/assets/res/SportsFitness.png" alt="AdvertLink">
+                        </a>  
+                        <h3 class="-text--color-white text-center text-sm select-none cursor-pointer">Sports and Fitness</h3>                      
+                    </div>
+                </div>
+              
+
+                <!-- Navigation Icons -->
+                <a class="absolute group top-0 bottom-0 my-auto left-3 cursor-pointer h-[80%] w-[3%] flex items-center justify-start" >
+                    <img class="w-8 group-hover:w-10 duration-300 ease-in-out" src="/src/assets/icons/chevron-left.svg" alt="Nav-left">
+                </a>
+
+                <a class="absolute group top-0 bottom-0 my-auto right-3 cursor-pointer h-[80%] w-[3%] flex items-center justify-end" >
+                    <img class="w-8 group-hover:w-10 duration-300 ease-in-out" src="/src/assets/icons/chevron-right.svg" alt="Nav-right">
+                </a>
+
+            </div>
+
+            <!--=================================================-->
+            <!--= Seventh Sub-Section << WareHouse Clearance >> =-->
+            <!--=================================================-->  
+
+            <div class="relative h-max w-full rounded-br-md rounded-bl-md -bg--color-dark flex flex-col gap-1">
+                
+                <div class="w-full py-3 -bg--color-primary-hover rounded-tl-md rounded-tr-md">
+                    <div class="flex justify-between items-center w-[90%] mx-auto">
+                    <h3 class="-text--color-white text-lg cursor-default">WareHouse Clearance Sale</h3>
+                    <a class="bgClip hover:font-bold hover:-text--color-white" href="#">SEE ALL</a>
+                </div>
+                </div>
+                
+                <div class="h-max flex justify-evenly items-center flex-wrap -bg--color-dark rounded-bl-md rounded-br-md px-2 pb-2">
+                    <!-- Advert Cards -->
+                    
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(12).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>                                
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(27).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(26).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(27).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(29).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                                
+                            </div>                           
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <a class="relative h-[185px] w-[180px] overflow-hidden" href="#">
+                                <img class="block w-full h-[185px]" src="/src/assets/res/1(30).jpg" alt="AdvertLink">
+                                <div class="absolute top-1 right-1 -bg--color-dark p-1 rounded-md text-sm -text--color-white w-[48.7px] text-center">
+                                    -35%
+                                </div>
+                            </a>  
+                            <div class="p-2">
+                                <h3 class="name">Vitron HTC3200S 32" Smart Frameless Android LED TV (1YR WRTY)</h3>
+                                <h3 class="-text--color-white text-lg">Ksh 11,685</h3>
+                                <h4 class="-text--color-gray line-through text-sm">Ksh 18,069</h4>
+                               
+                            </div>                           
+                           
+                        </div>
+                    </a>
+                   
+                  
+                </div>              
+
+            </div>
+
+            <!--=================================================-->
+            <!--=  Sub-Section 8 << Top Deals for You        >> =-->
+            <!--=================================================-->  
+
+            <div class="relative h-max w-full rounded-br-md rounded-bl-md -bg--color-dark flex flex-col gap-1">
+                
+                <div class="w-full py-3 -bg--color-primary-hover rounded-tl-md rounded-tr-md">
+                    <div class="flex justify-center items-center w-[90%] mx-auto">
+                    <h3 class="-text--color-white text-lg cursor-default tracking-wide">Top deals for you || Shop Now</h3>                    
+                </div>
+                </div>
+                
+                <div class="h-max flex justify-evenly items-center flex-wrap -bg--color-dark rounded-bl-md rounded-br-md px-2 pb-2 space-y-2 mt-2">
+                    <!-- Advert Cards -->
+                    
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB1.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB_2_.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB_3__.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB14.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB5_rvsd.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB6_rvsd(1).jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB14.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB11.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB4_rvsd.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB6_rvsd(1).jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB2_rvsd.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/TB1_rvsd.jpg" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+
+
+                    
+                   
+                  
+                </div>              
+
+            </div>
+
+            <!--=================================================-->
+            <!--=  Sub-Section 9 <<         More Deals       >> =-->
+            <!--=================================================-->  
+
+            <div class="relative h-max w-full rounded-br-md rounded-bl-md ">                
+                
+                <div class="h-max flex justify-evenly items-center flex-wrap rounded-bl-md rounded-br-md px-2 pb-2 space-y-2 mt-2">
+                    <!-- Advert Cards -->
+                    
+                  
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_20px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/Smartphones(1).png" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_20px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/SoundSpeakers.png" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_20px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/MobileAccessories.png" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_20px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/LightingSolar.png" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_20px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/KitchenDining.png" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+                    <a ref="#">
+                        <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_20px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+                            <img class="block w-full h-[16rem]" src="/src/assets/res/StorageOrganizer.png" alt="AdvertLink">                                                
+                           
+                        </div>
+                    </a>
+
+
+
+                    
+                   
+                  
+                </div>              
+
+            </div>
+
+            <!--==================================================-->
+            <!--=  Sub-Section 10 <<         More Advert      >> =-->
+            <!--==================================================--> 
+            <div class="relative rounded-md bg-no-repeat bg-cover bg-center -bg--color-dark overflow-hidden w-full h-[24rem]">
+                <a href="#"><img class="block w-full h-full rounded-md " src="/src/assets/res/KE_Appliances_Ramtons_0224_SiS.jpg " alt="Advert"></a>
+
+                <a class="absolute group top-0 bottom-0 my-auto left-3 cursor-pointer h-[80%] w-[12%] flex items-center justify-start" >
+                    <img class="w-8 opacity-0  group-hover:opacity-100 duration-300 ease-in-out" src="/src/assets/icons/chevron-left.svg" alt="Nav-left">
+                </a>
+
+                <a class="absolute group top-0 bottom-0 my-auto right-3 cursor-pointer h-[80%] w-[12%] flex items-center justify-end" >
+                    <img class="w-8 opacity-0  group-hover:opacity-100 duration-300 ease-in-out" src="/src/assets/icons/chevron-right.svg" alt="Nav-right">
+                </a>
+
+
+                <a class="absolute group left-0 bottom-3 mx-auto right-0 h-[10%%] w-[10%] flex items-center justify-evenly " >
+                   
+                        <span class="ad-1 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                        <span class="ad-2 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>
+                        <span class="ad-3 h-3 w-3 rounded-full cursor-pointer bg-orange-700"></span>
+                                        
+                </a>
+            </div>
+
+            <!--===================================================-->
+            <!--=  Sub-Section 10 <<         More About Us     >> =-->
+            <!--==================================================--> 
+            <div class="relative rounded-md bg-no-repeat bg-cover bg-center -bg--color-dark overflow-hidden w-full h-max flex flex-col justify-start p-3 items-start  gap-4">
+               <div class="bg-gradient-to-r -from--color-amber -via--color-orange -to--color-white text-transparent bg-clip-text tracking-wide font-bold text-lg">Xeniex Kenya - Unveiling Our Leading E-Commerce Website</div>
+
+               <div class="flex flex-wrap flex-col gap-2">
+                <h3 class="font-bold -text--color-white text-lg">Welcome to the ultimate online shopping destination!</h3>
+                <p class="-text--color-white text-sm">
+                    Our e-commerce platform is here to revolutionize your shopping journey. Whether you're on the hunt for cutting-edge tech gadgets, the latest fashion trends, or essential household appliances, we've got it all. We're not just an ordinary online store; we're your digital shopping haven. Bid farewell to crowded malls and say hello to the convenience and ease of buying online in Nairobi, Mombasa, Kisumu, Nakuru and all across Kenya.
+                </p>
+               </div>
+
+               <div class="flex flex-wrap flex-col gap-2">
+                <h3 class="font-bold -text--color-white text-lg">Best Prices, Premium Brands, and Diverse Categories</h3>
+                <p class="-text--color-white text-sm">
+                    Our commitment is to provide you with unbeatable prices, ensuring you get the most value for your money when you buy online. Explore a vast array of categories, encompassing electronics, computing, televisions, smartphones, men & women fashion, sporting goods, health & beauty and more. From the newest iPhone 14 Pro Max to the sensational Samsung Galaxy Z Fold 5 and Tecno Spark 10 Pro, Xiaomi Redmi Note 12, Tecno Spark 10, Samsung A14, Tecno Camon 20 and many more. We offer top tier products, that you crave. We take pride in presenting high-quality items at best prices that can't be matched, hailing from renowned top brands such as Tecno, Infinix, Samsung, Oppo, Xiaomi, Apple and many more.
+                </p>
+               </div>
+
+               <div class="flex flex-wrap flex-col gap-2">
+                <h3 class="font-bold -text--color-white text-lg">Tempting Offers, Exclusive Promotions, and Enormous Savings</h3>
+                <p class="-text--color-white text-sm">
+                    Get ready to be enchanted by our tempting offers, exclusive promotions, and substantial discounts when you buy online. Our online store is your gateway to unparalleled stock clearance sales. From lightning-quick flash sales to the grandeur of Black Friday, we ensure that your online shopping experience is not only cost-effective but also exhilarating. Save on an extensive range of products, from watches to air conditioners, laptops, sneakers, washing machine, bluetooth speakers and earbuds.
+                </p>
+               </div>
+
+               <div class="flex flex-wrap flex-col gap-2">
+                <h3 class="font-bold -text--color-white text-lg">Exceptional Services</h3>
+                <p class="-text--color-white text-sm">
+                    At our online store, we go the extra mile to ensure your online shopping experience is seamless and gratifying. Benefit from our delivery service, bringing your purchases directly to your doorstep, making your experience utterly hassle-free. What's more, we offer a wide range of products with free delivery & shipping, making your shopping even more convenient and economical. So, browse our selection and enjoy the added benefit of no shipping charges on these items. Shop with confidence in our official stores, where authenticity is guaranteed. Searching for quality without breaking the bank when you buy online? Explore our refurbished options, offering like-new products at budget-friendly prices. Discover the world at your doorstep with Xeniex Global! Our handpicked selection of top products shipped from abroad brings the best of international quality and innovation right to your fingertips.
+                </p>
+               </div>
+
+               <div class="flex flex-wrap flex-col gap-2">
+                <h3 class="font-bold -text--color-white text-lg">Don't Miss Our Exclusive Campaign Events</h3>
+                <p class="-text--color-white text-sm">
+                    Mark your calendar for our spectacular campaign events. Tech Week is your portal to the latest technological innovations, Jumia Anniversary celebrates fantastic deals,Black Friday promises to be the shopping extravaganza of the year, and the Jumia Festival is your exclusive ticket to a world of savings on your favorite brands. Join these events for the ultimate online shopping experience brimming with exciting stock clearance sales, discounts, and products that cater to your every need when you buy online. Ensure you're part of the excitement!
+                    <br><br>
+                    At Xeniex Kenya, we've brought the entire shopping universe right to your fingertips. We're not just an online store; we're your ally in discovering the finest online sales, premium offers, captivating deals, and unparalleled discounts. Shop with us today and embrace the future of online shopping!
+                </p>
+               </div>
+
+               <div class="flex flex-wrap flex-col gap-2">
+                <h3 class="font-bold -text--color-white text-lg">FAQs</h3>
+                <div>
+                   <ul class="flex flex-col flex-wrap gap-2">
+                        <li class="flex flex-col justify-start items-start gap-1">
+                        <span class="-text--color-white">1. How can I place an order?</span>
+                           <p class="-text--color-white pl-4 text-sm">
+                            Placing an order is easy! Simply browse our website, select the products you want, add them to your cart, and proceed to checkout. Follow the on-screen instructions to complete your purchase.
+                           </p>
+                        </li>
+
+                        <li class="flex flex-col justify-start items-start gap-1">
+                        <span class="-text--color-white">2. What payment methods do you accept?</span>
+                          <p class="-text--color-white pl-4 text-sm">
+                            We accept a variety of payment methods, including credit cards and cash on delivery. Choose the one that suits you best during the checkout process.
+                          </p>
+                        </li>
+
+                        <li class="flex flex-col justify-start items-start gap-1">
+                        <span class="-text--color-white">3. How long does delivery take?</span>
+                            <p class="-text--color-white pl-4 text-sm">
+                                Delivery times may vary depending on your location and the product. We strive to deliver your orders as quickly as possible, and you can check the estimated delivery time during the checkout process.
+                            </p>
+                        </li>
+
+                        <li class="flex flex-col justify-start items-start gap-1">
+                        <span class="-text--color-white">4. Do you offer refunds or returns?</span>
+                            <p class="-text--color-white pl-4 text-sm">
+                                Yes, we have a hassle-free return and refund policy. If you're not satisfied with your purchase, you can initiate a return request, and we'll guide you through the process.
+                            </p>
+                        </li>
+
+                        <li class="flex flex-col justify-start items-start gap-1">
+                        <span class="-text--color-white">5. Is my personal information safe?</span>
+                            <p class="-text--color-white pl-4 text-sm">
+                                Absolutely. We take data security seriously and have robust measures in place to protect your personal information. Your data is safe with us.                                
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+               </div>
+
+            </div>
+
+           </div>
+        </section>
+    
+    </main>
+
+    <!--=========== Footer Section ===========-->
+    <footer class="relative mt-20">
+        <section>
+
+           <div class="h-max w-full -bg--color-primary-hover2 p-8">
+            <div class="container w-[60%] mx-auto h-max flex justify-end align-top gap-20">
+                <div class="flex justify-start flex-col gap-4">
+                    <span class="font-bold text-[.79rem] tracking-tighte -text--color-white">NEW TO XENIEX?</span>
+                    <p class="text-[.79rem] tracking-tighte -text--color-light -mt-2">Subscribe to our newsletter to get updates on our latest offers!</p>
+
+                    <div class="my-2 flex justify-start items-center gap-2">
+                        <input class="px-6 py-3 rounded-md border border-solid -border--color-amber" type="email" placeholder="Enter Email Address">
+                        <button class="px-4 py-3 rounded-md border border-solid -border--color-white -text--color-white text-[0.9rem] active:opacity-50 hover:-bg--color-orange duration-200 ease-in-out ">MALE</button>
+                        <button class="px-4 py-3 rounded-md border border-solid -border--color-white -text--color-white text-[0.9rem] active:opacity-50 hover:-bg--color-orange duration-200 ease-in-out ">FEMALE</button>
+                    </div>
+                    
+                    <div class="flex justify-between gap-2 align-top ">
+                        <span class="h-10 w-10 rounded-full hover:-bg--color-orange flex justify-center items-center duration-200 ease-in-out">
+                            <input class="w-[1.25rem] h-[1.25rem] rounded-sm " type="checkbox">
+                        </span>
+                        <span>
+                            <p class="align-text-top text-sm -text--color-light">I agree to Jumia’s Privacy and Cookie Policy. You can unsubscribe from newsletters at any time.</p>
+                             <a class="-text--color-orange text-sm hover:underline" href="#">I accept the Legal Terms</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="">
+                    <span class="font-bold text-[.79rem] tracking-tighte -text--color-white">DOWNLOAD XENIEX FREE APP</span>
+                    <p class="text-[.75rem] tracking-tighter -text--color-light">Get access to exclusive offers!</p>
+                </div>
+                
+               </div>
+           </div>
+
+
+          <div class="w-full h-max -bg--color-primary-hover pb-16">
+                <div class="container w-[60%] mx-auto h-max flex justify-start align-top gap-16 py-4">
+
+                    <div class="flex flex-col gap-2">
+                        <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">NEED HELP?</span>
+
+                        <ul class="-space-y-1">
+                            <li><a class="footerlinks" href="#">Chat with us</a></li>
+                            <li><a class="footerlinks" href="#">Help Center</a></li>
+                            <li><a class="footerlinks" href="#">Contact Us</a></li>
+                        </ul>
+
+                        <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">USEFUL LINKS</span>
+
+                        <ul class="-space-y-1">
+                            <li><a class="footerlinks" href="#">Chat with us</a></li>
+                            <li><a class="footerlinks" href="#">Help Center</a></li>
+                            <li><a class="footerlinks" href="#">Contact Us</a></li>
+                            <li><a class="footerlinks" href="#">Track Your Order</a></li>
+                            <li><a class="footerlinks" href="#">Shipping and delivery</a></li>
+                            <li><a class="footerlinks" href="#">Pick-up Stations</a></li>
+                            <li><a class="footerlinks" href="#">Return Policy</a></li>
+                            <li><a class="footerlinks" href="#">How to Order?</a></li>
+                            <li><a class="footerlinks" href="#">Dispute Resolution Policy</a></li>
+                            <li><a class="footerlinks" href="#">Corporate and Bulk Purchase</a></li>
+                            <li><a class="footerlinks" href="#">Advertise with Xeniex</a></li>
+                            <li><a class="footerlinks" href="#">Report a Product</a></li>
+                            <li><a class="footerlinks" href="#">Xeniex Payment Information Guidelines</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="flex flex-col gap-2">
+                        <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">ABOUT XENIEX</span>
+
+                        <ul class="-space-y-1">
+                            <li><a class="footerlinks" href="#">About us</a></li>
+                            <li><a class="footerlinks" href="#">Returns and Refunds Policy</a></li>
+                            <li><a class="footerlinks" href="#">Xeniex Careers</a></li>
+                            <li><a class="footerlinks" href="#">Xeniex Express</a></li>
+                            <li><a class="footerlinks" href="#">Terms and Conditions</a></li>
+                            <li><a class="footerlinks" href="#">Store Credit Terms and Conditions</a></li>
+                            <li><a class="footerlinks" href="#">Privacy Notice</a></li>
+                            <li><a class="footerlinks" href="#">Cookies Notice</a></li>
+                            <li><a class="footerlinks" href="#">Flash Sales</a></li>
+                            <li><a class="footerlinks" href="#">Xeniex Global</a></li>
+                            <li><a class="footerlinks" href="#">Xeniex Anniversary 2024</a></li>
+                        </ul>
+                                        
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">MAKE MONEY WITH XENIEX</span>
+
+                        <ul class="-space-y-1">
+                            <li><a class="footerlinks" href="#">About us</a></li>
+                            <li><a class="footerlinks" href="#">Sell on Jumia</a></li>
+                            <li><a class="footerlinks" href="#">Vendor Hub</a></li>
+                            <li><a class="footerlinks" href="#">Become a Sales Consultant</a></li>
+                            <li><a class="footerlinks" href="#">Become a Logistics Service Partner</a></li>
+                            <li><a class="footerlinks" href="#">Jumia City Partner Program</a></li>
+                        </ul>
+                                        
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">XENIEX INTERNATIONAL</span>
+
+                        <ul class="-space-y-1 flex justify-start align-top gap-12">
+                            <ul>
+                                <li><a class="footerlinks" href="#">Algeria</a></li>
+                                <li><a class="footerlinks" href="#">Ivory Coast</a></li>
+                                <li><a class="footerlinks" href="#">Egypt</a></li>
+                                <li><a class="footerlinks" href="#">Ghana</a></li>
+                                <li><a class="footerlinks" href="#">Morocco</a></li>
+                            </ul>
+
+                            <ul>
+                                
+                                <li><a class="footerlinks" href="#">Nigeria</a></li>
+                                <li><a class="footerlinks" href="#">Senegal</a></li>
+                                <li><a class="footerlinks" href="#">Tunisia</a></li>
+                                <li><a class="footerlinks" href="#">Uganda</a></li>
+                                <li><a class="footerlinks" href="#">Zando</a></li>
+                            </ul>
+                        
+
+                        </ul>
+                                        
+                    </div>
+
+                </div>
+
+                <div class="container w-[60%] mx-auto h-max flex flex-col justify-start gap-16 py-4 mt-8 border-b border-solid -border--color-gray">
+            
+                       
+                           <div class="flex justify-start gap-48 align-top">
+                                <div>
+                                    <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">JOIN US ON</span>
+                                </div>
+
+                                <div>
+                                    <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">PAYMENT METHODS</span>
+                                </div>
+                           </div>                    
+                             
+
+                    <div class="flex justify-between w-full h-max">
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Adidas</a></li>
+                            <li><a class="footerlinks" href="#">AILYONS</a></li>
+                            <li><a class="footerlinks" href="#">Apple</a></li>
+                            <li><a class="footerlinks" href="#">Asus</a></li>
+                            <li><a class="footerlinks" href="#">Bruhm</a></li>
+                            <li><a class="footerlinks" href="#">Canon</a></li>
+                        </ul>  
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Cantu</a></li>
+                            <li><a class="footerlinks" href="#">Coke</a></li>
+                            <li><a class="footerlinks" href="#">DELL</a></li>
+                            <li><a class="footerlinks" href="#">Dove</a></li>
+                            <li><a class="footerlinks" href="#">Dr. Rashel</a></li>
+                        </ul>  
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Epson</a></li>
+                            <li><a class="footerlinks" href="#">Garnier</a></li>
+                            <li><a class="footerlinks" href="#">Hisense</a></li>
+                            <li><a class="footerlinks" href="#">HP</a></li>
+                            <li><a class="footerlinks" href="#">Infinix</a></li>
+                        </ul>  
+                      
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Itel</a></li>
+                            <li><a class="footerlinks" href="#">Jameson</a></li>
+                            <li><a class="footerlinks" href="#">L'Oréal Paris</a></li>
+                            <li><a class="footerlinks" href="#">Lenovo</a></li>
+                            <li><a class="footerlinks" href="#">Logitech</a></li>
+                        </ul>  
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Maybelline</a></li>
+                            <li><a class="footerlinks" href="#">Mika</a></li>
+                            <li><a class="footerlinks" href="#">NIVEA</a></li>
+                            <li><a class="footerlinks" href="#">Nunix</a></li>
+                            <li><a class="footerlinks" href="#">Oppo</a></li>
+                        </ul>  
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Ramtons</a></li>
+                            <li><a class="footerlinks" href="#">Roch</a></li>
+                            <li><a class="footerlinks" href="#">Samsung</a></li>
+                            <li><a class="footerlinks" href="#">Sandisk</a></li>
+                            <li><a class="footerlinks" href="#">Skyworth</a></li>
+                        </ul>  
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">Sony</a></li>
+                            <li><a class="footerlinks" href="#">TCL</a></li>
+                            <li><a class="footerlinks" href="#">Tecno</a></li>
+                            <li><a class="footerlinks" href="#">Transcend</a></li>
+                            <li><a class="footerlinks" href="#">Tusker</a></li>
+                        </ul>  
+                        <ul class="-space-y-1">
+                            
+                            <li><a class="footerlinks" href="#">USN</a></li>
+                            <li><a class="footerlinks" href="#">Vision Plus</a></li>
+                            <li><a class="footerlinks" href="#">Vitron</a></li>
+                            <li><a class="footerlinks" href="#">VON</a></li>
+                            <li><a class="footerlinks" href="#">XIAOMI</a></li>
+                        </ul>  
+                    </div>  
+
+
+                </div>
+                
+           </div>
+           
+        </section>
+    </footer>
+
+
+
+   <!-- npx tailwindcss -i ./src/main.css -o ./src/output.css --watch  -->
 </body>
 </html>

@@ -7,7 +7,8 @@
 
 :root{
     font-family: Arial, Helvetica, sans-serif;
-    
+    user-select: none;
+    color-scheme: dark;
 }
 
 *{
@@ -28,5 +29,5 @@
 }
 
 .footerlinks{
-    @apply text-[.79rem] hover:underline -text--color-light;
+    @apply text-[.79rem] hover:underline -text--color-light ;
 }

@@ -42,3 +42,388 @@ export const FAQData = [
         answer: `Absolutely. We take data security seriously and have robust measures in place to protect your personal information. Your data is safe with us.`,
     },
 ];
+
+export const AdidasData = [
+    {
+       href: '#',
+       label: 'Adidas', 
+    },
+    {
+        href: '#',
+        label: 'AILYONS', 
+     },
+     {
+        href: '#',
+        label: 'Apple', 
+     },
+     {
+        href: '#',
+        label: 'Asus', 
+     },
+     {
+        href: '#',
+        label: 'Bruhm', 
+     },
+     {
+        href: '#',
+        label: 'Canon', 
+     },
+];
+
+export const CantuData = [
+    {
+       href: '#',
+       label: 'Cantu', 
+    },
+    {
+        href: '#',
+        label: 'Coke', 
+     },
+     {
+        href: '#',
+        label: 'DELL', 
+     },
+     {
+        href: '#',
+        label: 'Dove', 
+     },
+     {
+        href: '#',
+        label: 'Dr. Rashel', 
+     }, 
+];
+
+export const EpsonData = [
+    {
+       href: '#',
+       label: 'Epson', 
+    },
+    {
+        href: '#',
+        label: 'Garnier', 
+     },
+     {
+        href: '#',
+        label: 'Hisense', 
+     },
+     {
+        href: '#',
+        label: 'HP', 
+     },
+     {
+        href: '#',
+        label: 'Infinix', 
+     }, 
+];
+
+export const ItelData = [
+    {
+       href: '#',
+       label: 'Itel', 
+    },
+    {
+        href: '#',
+        label: 'Jameson', 
+     },
+     {
+        href: '#',
+        label: `L'Oréal Paris`, 
+     },
+     {
+        href: '#',
+        label: 'Lenovo', 
+     },
+     {
+        href: '#',
+        label: 'Logitech', 
+     }, 
+];
+
+export const MaybellineData = [
+    {
+       href: '#',
+       label: 'Maybelline', 
+    },
+    {
+        href: '#',
+        label: 'Mika', 
+     },
+     {
+        href: '#',
+        label: `NIVEA`, 
+     },
+     {
+        href: '#',
+        label: 'Nunix', 
+     },
+     {
+        href: '#',
+        label: 'Oppo', 
+     }, 
+];
+
+export const RamtonsData = [
+    {
+       href: '#',
+       label: 'Ramtons', 
+    },
+    {
+        href: '#',
+        label: 'Roch', 
+     },
+     {
+        href: '#',
+        label: `Samsung`, 
+     },
+     {
+        href: '#',
+        label: 'Sandisk', 
+     },
+     {
+        href: '#',
+        label: 'Skyworth', 
+     }, 
+];
+
+export const SonyData = [
+    {
+       href: '#',
+       label: 'Sony', 
+    },
+    {
+        href: '#',
+        label: 'TCL', 
+     },
+     {
+        href: '#',
+        label: `Tecno`, 
+     },
+     {
+        href: '#',
+        label: 'Transcend', 
+     },
+     {
+        href: '#',
+        label: 'Tusker', 
+     }, 
+];
+
+export const USNData = [
+    {
+       href: '#',
+       label: 'USN', 
+    },
+    {
+        href: '#',
+        label: 'Vision Plus', 
+     },
+     {
+        href: '#',
+        label: `Vitron`, 
+     },
+     {
+        href: '#',
+        label: 'VON', 
+     },
+     {
+        href: '#',
+        label: 'XIAOMI', 
+     }, 
+];
+
+export const CountriesData = [
+    {
+       href: '#',
+       label: 'Algeria', 
+    },
+    {
+        href: '#',
+        label: 'Ivory Coast', 
+     },
+     {
+        href: '#',
+        label: `Egypt`, 
+     },
+     {
+        href: '#',
+        label: 'Ghana', 
+     },
+     {
+        href: '#',
+        label: 'Morocco', 
+     }, 
+];
+
+export const Countries1Data = [
+    {
+       href: '#',
+       label: 'Nigeria', 
+    },
+    {
+        href: '#',
+        label: 'Senegal', 
+     },
+     {
+        href: '#',
+        label: `Tunisia`, 
+     },
+     {
+        href: '#',
+        label: 'Uganda', 
+     },
+     {
+        href: '#',
+        label: 'Zando', 
+     }, 
+];
+
+export const UseFulLinksData = [
+    {
+       href: '#',
+       label: 'Chat with us', 
+    },
+    {
+        href: '#',
+        label: 'Help Center', 
+     },
+     {
+        href: '#',
+        label: `Contact Us`, 
+     },
+     {
+        href: '#',
+        label: 'Track Your Order', 
+     },
+     {
+        href: '#',
+        label: 'Shipping and delivery', 
+     }, 
+     {
+        href: '#',
+        label: 'Pick-up Stations', 
+     }, 
+     {
+        href: '#',
+        label: 'Return Policy', 
+     }, 
+     {
+        href: '#',
+        label: 'How to Order?', 
+     }, 
+     {
+        href: '#',
+        label: 'Dispute Resolution Policy', 
+     }, 
+     {
+        href: '#',
+        label: 'Corporate and Bulk Purchase', 
+     }, 
+     {
+        href: '#',
+        label: 'Advertise with Xeniex', 
+     }, 
+     {
+        href: '#',
+        label: 'Report a Product', 
+     }, 
+     {
+        href: '#',
+        label: 'Xeniex Payment Information Guidelines', 
+     }, 
+    
+];
+
+export const AboutXeniexData = [
+    {
+       href: '#',
+       label: 'About us', 
+    },
+    {
+        href: '#',
+        label: 'Returns and Refunds Policy', 
+     },
+     {
+        href: '#',
+        label: `Xeniex Careers`, 
+     },
+     {
+        href: '#',
+        label: 'Xeniex Express', 
+     },
+     {
+        href: '#',
+        label: 'Terms and Conditions', 
+     }, 
+     {
+        href: '#',
+        label: 'Store Credit Terms and Conditions', 
+     }, 
+     {
+        href: '#',
+        label: 'Privacy Notice', 
+     }, 
+     {
+        href: '#',
+        label: 'How to Order?', 
+     }, 
+     {
+        href: '#',
+        label: 'Cookies NoticeFlash Sales', 
+     }, 
+     {
+        href: '#',
+        label: 'Xeniex Global', 
+     }, 
+     {
+        href: '#',
+        label: 'Xeniex Anniversary 2024', 
+     }, 
+    
+];
+
+export const MakeMoneyData = [
+    {
+       href: '#',
+       label: 'About us', 
+    },
+    {
+        href: '#',
+        label: 'Sell on Xeniex', 
+     },
+     {
+        href: '#',
+        label: `Vendor Hub`, 
+     },
+     {
+        href: '#',
+        label: 'Become a Sales Consultant', 
+     },
+     {
+        href: '#',
+        label: 'Become a Logistics Service Partner', 
+     }, 
+     {
+        href: '#',
+        label: 'Xeniex City Partner Program', 
+     }, 
+    
+];
+
+export const NeedHelpData = [
+    {
+       href: '#',
+       label: 'Chat with us', 
+    },
+    {
+        href: '#',
+        label: 'Help Center', 
+     },
+     {
+        href: '#',
+        label: `Contact Us`, 
+     },
+  
+];
+
+
+

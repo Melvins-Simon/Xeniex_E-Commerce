@@ -25,19 +25,19 @@
 </head>
 <body class="relative -bg--color-black">
     <!--=========== Header Section ==========-->
-    <div class=" w-full h-[6vh] -bg--color-orange overflow-hidden">
-        <div class="container w-[60%] mx-auto shrink-0">
-           <a href="#"> <img src="./assets/icons/KE_Generic_JA24_Clearance_0524_STB.gif" alt="Anninersary"></a>
+    <div class=" w-full lg:h-[6vh] h-max -bg--color-orange overflow-hidden">
+        <div class="container lg:w-[60%] w-full mx-auto max-sm:h-8 shrink-0 ">
+           <a href="#"> <img class="h-full w-full" src="./assets/icons/KE_Generic_JA24_Clearance_0524_STB.gif" alt="Anninersary"></a>
         </div>
     </div>
     
     <div class="w-full h-[3.5vh] -bg--color-primary-hover2">
-        <div class="container w-[60%] h-full mx-auto flex items-center justify-start">
+        <div class="container lg:w-[60%] w-full h-full mx-auto flex items-center justify-start max-sm:justify-evenly">
             <a class="text-sm hover:underline bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out" href="#">Sell on Xeniex</a>
 
-            <span class="ml-[26rem] flex items-center justify-start gap-2">
-                <h1 class="animate-pulse bg-gradient-to-r  -from--color-white  to-orange-600 text-transparent bg-clip-text duration-300 ease-in-out cursor-default"><span class="-text--color-white">XE</span>NIEX</h1>
-                <a href="#"><img class="h-6 animate-spin" src="./assets/icons/logo.png" alt="logo"></a>
+            <span class="lg:ml-[26rem] flex items-center justify-start gap-2">
+                <h1 class="animate-pulse max-sm:text-sm bg-gradient-to-r  -from--color-white  to-orange-600 text-transparent bg-clip-text duration-300 ease-in-out cursor-default"><span class="-text--color-white">XE</span>NIEX</h1>
+                <a href="#"><img class="h-6 max-sm:h-4 animate-spin" src="./assets/icons/logo.png" alt="logo"></a>
             </span>
                
         </div>
@@ -45,88 +45,109 @@
 
     <header class="sticky top-0 z-50">
         <nav class="w-full h-[8vh] border-b -border-b--color-dark shadow-sm -shadow--color-dark -bg--color-bgrgba hover:-bg--color-primary-hover2 duration-300 ease-in-out backdrop-blur-xl">
-            <div class="container w-[60%] h-full mx-auto flex items-center justify-end">
-                <div class="flex justify-end items-center">
-                   <ul class="flex justify-between items-center space-x-12">
-                        <li>
-                            <a class="flex items-center justify-between gap-2">
-                            <span class="relative border border-solid -border--color-light rounded-md px-12">
-                                <input class="py-2 w-[22vw] bg-transparent  -text--color-white placeholder:font-normal font-bold" id="js-search" type="search" placeholder="Search products, brands and categories">
-                                
-                                <span class="material-symbols-outlined absolute top-0 bottom-0 left-2 my-auto text-white h-max">
-                                    search
+            <div class="container lg:w-[60%] w-full h-full mx-auto flex items-center justify-end">
+
+                    <div class="flex justify-end items-center max-sm:hidden">
+                    <ul class="flex justify-between items-center space-x-12">
+                            <li>
+                                <a class="flex items-center justify-between gap-2">
+                                <span class="relative border border-solid -border--color-light rounded-md px-12">
+                                    <input class="py-2 w-[22vw] bg-transparent  -text--color-white placeholder:font-normal font-bold" id="js-search" type="search" placeholder="Search products, brands and categories">
+                                    
+                                    <span class="material-symbols-outlined absolute top-0 bottom-0 left-2 my-auto text-white h-max">
+                                        search
+                                    </span>
+
+                                </span>
+                                <label class="cursor-pointer px-3 py-2 -bg--color-orange text-white rounded-md hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out" for="js-search">SEARCH</label>
+                                </a>
+                            </li>
+
+                            <span id="P-Account-Popup" class="flex relative justify-start items-center gap-1 px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
+                            
+                                <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Account</a></li>
+                                <span id="key-arrow-down" class="material-symbols-outlined -text--color-white cursor-pointer">
+                                    keyboard_arrow_down
                                 </span>
 
-                            </span>
-                            <label class="cursor-pointer px-3 py-2 -bg--color-orange text-white rounded-md hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out" for="js-search">SEARCH</label>
-                            </a>
-                        </li>
+                            
+                                <div id="Account-Popup" class="absolute  pt-3 right-0 -left-[50%] mx-auto -bottom-48 w-48 h-48 -bg--color-dark hover:-bg--color-primary-hover2 rounded-md hidden flex justify-between items-center flex-col">
+                                    <button class="px-2 w-[90%] py-2 -bg--color-orange text-white  rounded-sm hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out mb-2">SIGN IN</button>
+                                    <div class="flex items-start flex-col text-left border-t w-full rounded-b-sm">
+                                        <a
+                                        class="-text--color-white text-sm hover:-bg--color-primary-hover w-full py-2 pl-12" href="Account.html">My Account</a>
+                                        <a
+                                        class="-text--color-white text-sm hover:-bg--color-primary-hover w-full py-2 pl-12" href="#">Orders</a>
+                                        <a
+                                        class="-text--color-white text-sm hover:-bg--color-primary-hover w-full py-2 pl-12 rounded-b-sm" href="#">Saved Items</a>
+                                    </div>
+                            
 
-                        <span id="P-Account-Popup" class="flex relative justify-start items-center gap-1 px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
-                         
-                            <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Account</a></li>
-                            <span id="key-arrow-down" class="material-symbols-outlined -text--color-white cursor-pointer">
-                                keyboard_arrow_down
-                            </span>
-
-                          
-                            <div id="Account-Popup" class="absolute pt-3 right-0 -left-[50%] mx-auto -bottom-48 w-48 h-48 -bg--color-dark hover:-bg--color-primary-hover2 rounded-md hidden flex justify-between items-center flex-col">
-                                <button class="px-2 w-[90%] py-2 -bg--color-orange text-white  rounded-sm hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out mb-2">SIGN IN</button>
-                                <div class="flex items-start flex-col text-left border-t w-full rounded-b-sm">
-                                    <a
-                                    class="-text--color-white text-sm hover:-bg--color-primary-hover w-full py-2 pl-12" href="Account.html">My Account</a>
-                                    <a
-                                    class="-text--color-white text-sm hover:-bg--color-primary-hover w-full py-2 pl-12" href="#">Orders</a>
-                                    <a
-                                    class="-text--color-white text-sm hover:-bg--color-primary-hover w-full py-2 pl-12 rounded-b-sm" href="#">Saved Items</a>
                                 </div>
-                         
 
-                            </div>
-
-                        </span>
-
-                       <span id="P-Help-Popup" class="relative flex justify-start items-center gap-1 px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
-                        <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Help</a></li>
-                            <span id="key-arrow-down2" class="material-symbols-outlined -text--color-white cursor-pointer">
-                                keyboard_arrow_down
                             </span>
 
-                            <div id="Help-Popup" class="absolute pt-3 right-0 -left-[50%] mx-auto -bottom-64 w-max h-64 -bg--color-dark hover:-bg--color-primary-hover2 rounded-md hidden  flex justify-between items-center flex-col">
-                               
-                                <div class="flex items-start flex-col text-left border-b w-full pt-2 rounded-b-sm">
-                                    <a
-                                    class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Help Center</a>
-                                    <a
-                                    class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Place your Order</a>
-                                    <a
-                                    class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Order Cancellation</a>
-                                    <a
-                                    class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Returns &amp; Refunds </a>
-                                    <a
-                                    class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4 rounded-b-sm" href="#">Payment &amp; Xeniex Account</a>
-                                    
-                                </div> 
-                                <button class="px-2 w-[90%] py-2 -bg--color-orange text-white  rounded-sm hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out mb-2">LIVE CHAT</button>
-                         
+                        <span id="P-Help-Popup" class="relative flex justify-start items-center gap-1 px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
+                            <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Help</a></li>
+                                <span id="key-arrow-down2" class="material-symbols-outlined -text--color-white cursor-pointer">
+                                    keyboard_arrow_down
+                                </span>
 
-                            </div>
+                                <div id="Help-Popup" class="absolute pt-3 right-0 -left-[50%] mx-auto -bottom-64 w-max h-64 -bg--color-dark hover:-bg--color-primary-hover2 rounded-md hidden  flex justify-between items-center flex-col">
+                                
+                                    <div class="flex items-start flex-col text-left border-b w-full pt-2 rounded-b-sm">
+                                        <a
+                                        class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Help Center</a>
+                                        <a
+                                        class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Place your Order</a>
+                                        <a
+                                        class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Order Cancellation</a>
+                                        <a
+                                        class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4" href="#">Returns &amp; Refunds </a>
+                                        <a
+                                        class="-text--color-white hover:-bg--color-primary-hover w-full text-sm py-2 pl-3 pr-4 rounded-b-sm" href="#">Payment &amp; Xeniex Account</a>
+                                        
+                                    </div> 
+                                    <button class="px-2 w-[90%] py-2 -bg--color-orange text-white  rounded-sm hover:bg-opacity-80  active:bg-opacity-100 duration-300 ease-in-out mb-2">LIVE CHAT</button>
+                            
 
-                       </span>
+                                </div>
 
-                        <span class="px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
-                            <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Cart</a></li>
                         </span>
-                   </ul>
+
+                            <span class="px-2 py-1 rounded-sm hover:shadow-[0px_0px_200px] hover:-shadow--color-orange duration-200 ease-in-out">
+                                <li class="bg-gradient-to-r -from--color-white via-orange-400 to-orange-600 text-transparent bg-clip-text hover:-text--color-white active:text-orange-400 duration-300 ease-in-out"><a href="#">Cart</a></li>
+                            </span>
+                    </ul>
+                    </div>
+                <!-- Header Small Devices -->
+                <div class="lg:hidden w-full"> 
+                    <div class="flex justify-between items-center container w-[95%] mx-auto">
+                        <span class="relative border border-solid -border--color-light rounded-md pl-10 w-[80%]">
+                            <input class="py-2 bg-transparent  -text--color-white placeholder:font-normal font-bold w-full text-nowrap text-ellipsis" id="js-search" type="search" placeholder="Search products, brands and categories">
+                            
+                            <span class="material-symbols-outlined absolute top-0 bottom-0 left-2 my-auto text-white h-max">
+                                search
+                            </span>
+
+                        </span> 
+                        <a href="#">
+                            <span class="material-symbols-outlined text-lg">
+                                shopping_cart
+                                </span>
+                        </a>                           
+                    </div>                
                 </div>
-               
-            </div>
+            
+         </div>
+
+                   
         </nav>
     </header>
 
+    <div class="lg:hidden fixed z-50 bottom-0 left-0 w-full h-[10%] bg-red-300">
 
-
-
+    </div>
     <!--=========== Main Section ===========-->
     <main>
 
@@ -401,7 +422,6 @@
         </section>
     
     </main>
-
     <!--=========== Footer Section ===========-->
     <footer class="relative mt-20">
         <section>
@@ -436,36 +456,18 @@
                 
                </div>
            </div>
-
-
           <div class="w-full h-max -bg--color-primary-hover pb-16">
                 <div class="container w-[60%] mx-auto h-max flex justify-start align-top gap-16 py-4">
 
                     <div class="flex flex-col gap-2">
                         <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">NEED HELP?</span>
 
-                        <ul class="-space-y-1">
-                            <li><a class="footerlinks" href="#">Chat with us</a></li>
-                            <li><a class="footerlinks" href="#">Help Center</a></li>
-                            <li><a class="footerlinks" href="#">Contact Us</a></li>
+                        <ul id="NeedHelpCont" class="-space-y-1">
                         </ul>
 
                         <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">USEFUL LINKS</span>
 
-                        <ul class="-space-y-1">
-                            <li><a class="footerlinks" href="#">Chat with us</a></li>
-                            <li><a class="footerlinks" href="#">Help Center</a></li>
-                            <li><a class="footerlinks" href="#">Contact Us</a></li>
-                            <li><a class="footerlinks" href="#">Track Your Order</a></li>
-                            <li><a class="footerlinks" href="#">Shipping and delivery</a></li>
-                            <li><a class="footerlinks" href="#">Pick-up Stations</a></li>
-                            <li><a class="footerlinks" href="#">Return Policy</a></li>
-                            <li><a class="footerlinks" href="#">How to Order?</a></li>
-                            <li><a class="footerlinks" href="#">Dispute Resolution Policy</a></li>
-                            <li><a class="footerlinks" href="#">Corporate and Bulk Purchase</a></li>
-                            <li><a class="footerlinks" href="#">Advertise with Xeniex</a></li>
-                            <li><a class="footerlinks" href="#">Report a Product</a></li>
-                            <li><a class="footerlinks" href="#">Xeniex Payment Information Guidelines</a></li>
+                        <ul id="UseFulLinksCont" class="-space-y-1">                            
                         </ul>
                     </div>
 
@@ -474,18 +476,7 @@
                     <div class="flex flex-col gap-2">
                         <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">ABOUT XENIEX</span>
 
-                        <ul class="-space-y-1">
-                            <li><a class="footerlinks" href="#">About us</a></li>
-                            <li><a class="footerlinks" href="#">Returns and Refunds Policy</a></li>
-                            <li><a class="footerlinks" href="#">Xeniex Careers</a></li>
-                            <li><a class="footerlinks" href="#">Xeniex Express</a></li>
-                            <li><a class="footerlinks" href="#">Terms and Conditions</a></li>
-                            <li><a class="footerlinks" href="#">Store Credit Terms and Conditions</a></li>
-                            <li><a class="footerlinks" href="#">Privacy Notice</a></li>
-                            <li><a class="footerlinks" href="#">Cookies Notice</a></li>
-                            <li><a class="footerlinks" href="#">Flash Sales</a></li>
-                            <li><a class="footerlinks" href="#">Xeniex Global</a></li>
-                            <li><a class="footerlinks" href="#">Xeniex Anniversary 2024</a></li>
+                        <ul id="AboutXeniexCont" class="-space-y-1">
                         </ul>
                                         
                     </div>
@@ -493,13 +484,7 @@
                     <div class="flex flex-col gap-2">
                         <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">MAKE MONEY WITH XENIEX</span>
 
-                        <ul class="-space-y-1">
-                            <li><a class="footerlinks" href="#">About us</a></li>
-                            <li><a class="footerlinks" href="#">Sell on Xeniex</a></li>
-                            <li><a class="footerlinks" href="#">Vendor Hub</a></li>
-                            <li><a class="footerlinks" href="#">Become a Sales Consultant</a></li>
-                            <li><a class="footerlinks" href="#">Become a Logistics Service Partner</a></li>
-                            <li><a class="footerlinks" href="#">Xeniex City Partner Program</a></li>
+                        <ul id="MakeMoneyCont" class="-space-y-1">
                         </ul>
                                         
                     </div>
@@ -507,25 +492,9 @@
                     <div class="flex flex-col gap-2">
                         <span class="font-bold text-[.82rem] tracking-tighte -text--color-white">XENIEX INTERNATIONAL</span>
 
-                        <ul class="-space-y-1 flex justify-start align-top gap-12">
-                            <ul>
-                                <li><a class="footerlinks" href="#">Algeria</a></li>
-                                <li><a class="footerlinks" href="#">Ivory Coast</a></li>
-                                <li><a class="footerlinks" href="#">Egypt</a></li>
-                                <li><a class="footerlinks" href="#">Ghana</a></li>
-                                <li><a class="footerlinks" href="#">Morocco</a></li>
-                            </ul>
-
-                            <ul>
-                                
-                                <li><a class="footerlinks" href="#">Nigeria</a></li>
-                                <li><a class="footerlinks" href="#">Senegal</a></li>
-                                <li><a class="footerlinks" href="#">Tunisia</a></li>
-                                <li><a class="footerlinks" href="#">Uganda</a></li>
-                                <li><a class="footerlinks" href="#">Zando</a></li>
-                            </ul>
-                        
-
+                        <ul  class="-space-y-1 flex justify-start align-top gap-12">
+                            <ul id="CountryDataCont"></ul>
+                            <ul id="Country1DataCont"></ul>
                         </ul>
                                         
                     </div>
@@ -547,85 +516,37 @@
                              
 
                     <div class="flex justify-between w-full h-max">
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Adidas</a></li>
-                            <li><a class="footerlinks" href="#">AILYONS</a></li>
-                            <li><a class="footerlinks" href="#">Apple</a></li>
-                            <li><a class="footerlinks" href="#">Asus</a></li>
-                            <li><a class="footerlinks" href="#">Bruhm</a></li>
-                            <li><a class="footerlinks" href="#">Canon</a></li>
+
+                        <ul id="AdidasDataCont" class="-space-y-1">                        
                         </ul>  
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Cantu</a></li>
-                            <li><a class="footerlinks" href="#">Coke</a></li>
-                            <li><a class="footerlinks" href="#">DELL</a></li>
-                            <li><a class="footerlinks" href="#">Dove</a></li>
-                            <li><a class="footerlinks" href="#">Dr. Rashel</a></li>
+
+                        <ul id="CantuDataCont" class="-space-y-1">                  
                         </ul>  
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Epson</a></li>
-                            <li><a class="footerlinks" href="#">Garnier</a></li>
-                            <li><a class="footerlinks" href="#">Hisense</a></li>
-                            <li><a class="footerlinks" href="#">HP</a></li>
-                            <li><a class="footerlinks" href="#">Infinix</a></li>
+                        <ul id="EpsonDataCont" class="-space-y-1">                  
                         </ul>  
                       
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Itel</a></li>
-                            <li><a class="footerlinks" href="#">Jameson</a></li>
-                            <li><a class="footerlinks" href="#">L'Oréal Paris</a></li>
-                            <li><a class="footerlinks" href="#">Lenovo</a></li>
-                            <li><a class="footerlinks" href="#">Logitech</a></li>
+                        <ul id="ItelDataCont" class="-space-y-1">                  
                         </ul>  
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Maybelline</a></li>
-                            <li><a class="footerlinks" href="#">Mika</a></li>
-                            <li><a class="footerlinks" href="#">NIVEA</a></li>
-                            <li><a class="footerlinks" href="#">Nunix</a></li>
-                            <li><a class="footerlinks" href="#">Oppo</a></li>
+
+                        <ul id="MaybellineDataCont" class="-space-y-1">                           
                         </ul>  
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Ramtons</a></li>
-                            <li><a class="footerlinks" href="#">Roch</a></li>
-                            <li><a class="footerlinks" href="#">Samsung</a></li>
-                            <li><a class="footerlinks" href="#">Sandisk</a></li>
-                            <li><a class="footerlinks" href="#">Skyworth</a></li>
+
+                        <ul id="RamtonsDataCont" class="-space-y-1">                      
                         </ul>  
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">Sony</a></li>
-                            <li><a class="footerlinks" href="#">TCL</a></li>
-                            <li><a class="footerlinks" href="#">Tecno</a></li>
-                            <li><a class="footerlinks" href="#">Transcend</a></li>
-                            <li><a class="footerlinks" href="#">Tusker</a></li>
+
+                        <ul id="SonyDataCont" class="-space-y-1">
                         </ul>  
-                        <ul class="-space-y-1">
-                            
-                            <li><a class="footerlinks" href="#">USN</a></li>
-                            <li><a class="footerlinks" href="#">Vision Plus</a></li>
-                            <li><a class="footerlinks" href="#">Vitron</a></li>
-                            <li><a class="footerlinks" href="#">VON</a></li>
-                            <li><a class="footerlinks" href="#">XIAOMI</a></li>
+
+                        <ul id="USNDataCont" class="-space-y-1">
                         </ul>  
                     </div>  
 
 
                 </div>
                 
-           </div>
-           
+           </div>           
         </section>
     </footer>
-
-
-
-   <!-- npx tailwindcss -i ./src/main.css -o ./src/output.css --watch  -->
-   <script src="main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>

@@ -6,55 +6,71 @@ import {
   HalfPriceProducts,
   WareHouseClearanceProducts,
   TopDealProducts,
-  MoreAdvertProducts
+  MoreAdvertProducts,
 } from "./ProductsData.js";
-import { AboutData,FAQData } from "./AboutData.js";
+import {
+  AboutData,
+  FAQData,
+  AdidasData,
+  CantuData,
+  EpsonData,
+  ItelData,
+  MaybellineData,
+  RamtonsData,
+  SonyData,
+  USNData,
+  CountriesData,
+  Countries1Data,
+  UseFulLinksData,
+  AboutXeniexData,
+  MakeMoneyData,
+  NeedHelpData,
+} from "./AboutData.js";
 
 // HEADER NAVIGATIONS
-const HeaderJS = () =>{
+const HeaderJS = () => {
   const pAccount = document.querySelector("#P-Account-Popup");
-const accountP = document.querySelector("#Account-Popup");
-const pHelp = document.querySelector("#P-Help-Popup");
-const helpP = document.querySelector("#Help-Popup");
-const keyAr1 = document.querySelector("#key-arrow-down");
-const keyAr2 = document.querySelector("#key-arrow-down2");
+  const accountP = document.querySelector("#Account-Popup");
+  const pHelp = document.querySelector("#P-Help-Popup");
+  const helpP = document.querySelector("#Help-Popup");
+  const keyAr1 = document.querySelector("#key-arrow-down");
+  const keyAr2 = document.querySelector("#key-arrow-down2");
 
-pAccount.addEventListener("click", () => {
-  accountP.classList.toggle("hidden");
+  pAccount.addEventListener("click", () => {
+    accountP.classList.toggle("hidden");
 
-  keyAr1.innerHTML === "keyboard_arrow_up"
-    ? (keyAr1.innerHTML = "keyboard_arrow_down")
-    : (keyAr1.innerHTML = "keyboard_arrow_up");
-});
+    keyAr1.innerHTML === "keyboard_arrow_up"
+      ? (keyAr1.innerHTML = "keyboard_arrow_down")
+      : (keyAr1.innerHTML = "keyboard_arrow_up");
+  });
 
-pHelp.addEventListener("click", () => {
-  helpP.classList.toggle("hidden");
+  pHelp.addEventListener("click", () => {
+    helpP.classList.toggle("hidden");
 
-  keyAr2.innerHTML === "keyboard_arrow_up"
-    ? (keyAr2.innerHTML = "keyboard_arrow_down")
-    : (keyAr2.innerHTML = "keyboard_arrow_up");
-});
-}
-window.addEventListener('DOMContentLoaded',HeaderJS());
+    keyAr2.innerHTML === "keyboard_arrow_up"
+      ? (keyAr2.innerHTML = "keyboard_arrow_down")
+      : (keyAr2.innerHTML = "keyboard_arrow_up");
+  });
+};
+window.addEventListener("DOMContentLoaded", HeaderJS());
 
 // NAVIGATIION DOTS
 
-const rendDotsSpan = () =>{
+const rendDotsSpan = () => {
   const dot1Cont = document.getElementById("navigationDots1");
-const dot2Cont = document.querySelector('#MoreAdvertSpanDot');
-function renderNavDots(numberOfDots,container) {
-  let html = '';
-  for (let i = 1; i <= numberOfDots; i++) {
-    html += `<span class="ad-1 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>`;
-  }  
-  container.innerHTML = html;  
-}
+  const dot2Cont = document.querySelector("#MoreAdvertSpanDot");
+  function renderNavDots(numberOfDots, container) {
+    let html = "";
+    for (let i = 1; i <= numberOfDots; i++) {
+      html += `<span class="ad-1 h-3 w-3 rounded-full cursor-pointer -bg--color-gray"></span>`;
+    }
+    container.innerHTML = html;
+  }
 
-window.addEventListener('DOMContentLoaded',renderNavDots(7,dot1Cont));
-window.addEventListener('DOMContentLoaded',renderNavDots(3,dot2Cont));
-
-}
-window.addEventListener('DOMContentLoaded',rendDotsSpan());
+  window.addEventListener("DOMContentLoaded", renderNavDots(7, dot1Cont));
+  window.addEventListener("DOMContentLoaded", renderNavDots(3, dot2Cont));
+};
+window.addEventListener("DOMContentLoaded", rendDotsSpan());
 
 // DISPLAY NAV LINKS & ITEMS
 function displayNav() {
@@ -244,7 +260,9 @@ window.addEventListener("DOMContentLoaded", renderHalfPrice());
 
 function renderWareHouseClearance() {
   let WareHouseClearanceElem = "";
-  const WareHouseClearanceCont = document.querySelector("#WareHouseClearanceCont");
+  const WareHouseClearanceCont = document.querySelector(
+    "#WareHouseClearanceCont"
+  );
   const dispWareHouseClearance = () => {
     WareHouseClearanceProducts.map((product, index) => {
       WareHouseClearanceElem += `
@@ -282,7 +300,7 @@ function renderTopDeals() {
     TopDealProducts.map((product, index) => {
       TopDealsElem += `
       <a key='${index}' href="${product.href}">
-      <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
+      <div class="h-max w-[180px] cursor-pointer rounded-md hover:scale-[1.01] hover:shadow-[0px_0px_5px] hover:shadow-black duration-100 ease-in-out flex flex-col gap-1 overflow-hidden">
           <img class="block w-full h-[16rem]" src="${product.src}" alt="Top Deal">      
       </div>
       </a>
@@ -311,7 +329,6 @@ function renderMoreAdvert() {
 }
 window.addEventListener("DOMContentLoaded", renderMoreAdvert());
 
-
 // ABOUT XENIEX SECTION
 
 function renderAboutData() {
@@ -332,7 +349,6 @@ function renderAboutData() {
   };
   dispAboutData();
   AboutDataCont.innerHTML = AboutDataElem;
-
 }
 window.addEventListener("DOMContentLoaded", renderAboutData());
 
@@ -340,7 +356,7 @@ window.addEventListener("DOMContentLoaded", renderAboutData());
 
 function renderFAQData() {
   let FAQDataElem = "";
-  const FAQDataCont = document.querySelector("#FAQDataCont"); 
+  const FAQDataCont = document.querySelector("#FAQDataCont");
   const dispFAQData = () => {
     FAQData.map((data, index) => {
       FAQDataElem += `
@@ -350,11 +366,236 @@ function renderFAQData() {
        ${data.answer}
         </p>
     </li>
-      `;    
+      `;
     });
-  };  
+  };
   dispFAQData();
-  FAQDataCont.innerHTML=FAQDataElem;
-
+  FAQDataCont.innerHTML = FAQDataElem;
 }
 window.addEventListener("DOMContentLoaded", renderFAQData());
+
+// About Links
+
+//Column 1
+function renderAdidasData() {
+  let AdidasDataElem = "";
+  const AdidasDataCont = document.querySelector("#AdidasDataCont");
+  const dispAdidasData = () => {
+    AdidasData.map((data, index) => {
+      AdidasDataElem += `
+      <li key='${index}' ><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispAdidasData();
+  AdidasDataCont.innerHTML = AdidasDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderAdidasData());
+
+//Column 2
+function renderCantuData() {
+  let CantuDataElem = "";
+  const CantuDataCont = document.querySelector("#CantuDataCont");
+  const dispCantuData = () => {
+    CantuData.map((data, index) => {
+      CantuDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispCantuData();
+  CantuDataCont.innerHTML = CantuDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderCantuData());
+
+//Column 3
+function renderEpsonData() {
+  let EpsonDataElem = "";
+  const EpsonDataCont = document.querySelector("#EpsonDataCont");
+  const dispEpsonData = () => {
+    EpsonData.map((data, index) => {
+      EpsonDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispEpsonData();
+  EpsonDataCont.innerHTML = EpsonDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderEpsonData());
+
+//Column 4
+function renderItelData() {
+  let ItelDataElem = "";
+  const ItelDataCont = document.querySelector("#ItelDataCont");
+  const dispItelData = () => {
+    ItelData.map((data, index) => {
+      ItelDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispItelData();
+  ItelDataCont.innerHTML = ItelDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderItelData());
+
+//Column 5
+function renderMaybellineData() {
+  let MaybellineDataElem = "";
+  const MaybellineDataCont = document.querySelector("#MaybellineDataCont");
+  const dispMaybellineData = () => {
+    MaybellineData.map((data, index) => {
+      MaybellineDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispMaybellineData();
+  MaybellineDataCont.innerHTML = MaybellineDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderMaybellineData());
+
+//Column 6
+function renderRamtonsData() {
+  let RamtonsDataElem = "";
+  const RamtonsDataCont = document.querySelector("#RamtonsDataCont");
+  const dispRamtonsData = () => {
+    RamtonsData.map((data, index) => {
+      RamtonsDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispRamtonsData();
+  RamtonsDataCont.innerHTML = RamtonsDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderRamtonsData());
+
+//Column 7
+function renderSonyData() {
+  let SonyDataElem = "";
+  const SonyDataCont = document.querySelector("#SonyDataCont");
+  const dispSonyData = () => {
+    SonyData.map((data, index) => {
+      SonyDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispSonyData();
+  SonyDataCont.innerHTML = SonyDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderSonyData());
+
+//Column 8
+function renderUSNData() {
+  let USNDataElem = "";
+  const USNDataCont = document.querySelector("#USNDataCont");
+  const dispUSNData = () => {
+    USNData.map((data, index) => {
+      USNDataElem += `
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispUSNData();
+  USNDataCont.innerHTML = USNDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderUSNData());
+
+// Render Contries
+function renderCountriesData() {
+  let CountriesDataElem = "";
+  const CountriesDataCont = document.querySelector("#CountryDataCont");
+  const dispCountriesData = () => {
+    CountriesData.map((data, index) => {
+      CountriesDataElem += `      
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>     
+      `;
+    });
+  };
+  dispCountriesData();
+  CountriesDataCont.innerHTML = CountriesDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderCountriesData());
+
+function renderCountries1Data() {
+  let Countries1DataElem = "";
+  const Countries1DataCont = document.querySelector("#Country1DataCont");
+  const dispCountries1Data = () => {
+    Countries1Data.map((data, index) => {
+      Countries1DataElem += `    
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>
+      `;
+    });
+  };
+  dispCountries1Data();
+  Countries1DataCont.innerHTML = Countries1DataElem;
+}
+window.addEventListener("DOMContentLoaded", renderCountries1Data());
+
+// USEFULL Links
+function renderUseFulLinksData() {
+  let UseFulLinksDataElem = "";
+  const UseFulLinksDataCont = document.querySelector("#UseFulLinksCont");
+  const dispUseFulLinksData = () => {
+    UseFulLinksData.map((data, index) => {
+      UseFulLinksDataElem += `      
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>     
+      `;
+    });
+  };
+  dispUseFulLinksData();
+  UseFulLinksDataCont.innerHTML = UseFulLinksDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderUseFulLinksData());
+
+
+// About Xeniex Links
+function renderAboutXeniexData() {
+  let AboutXeniexDataElem = "";
+  const AboutXeniexDataCont = document.querySelector("#AboutXeniexCont");
+  const dispAboutXeniexData = () => {
+    AboutXeniexData.map((data, index) => {
+      AboutXeniexDataElem += `      
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>     
+      `;
+    });
+  };
+  dispAboutXeniexData();
+  AboutXeniexDataCont.innerHTML = AboutXeniexDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderAboutXeniexData());
+
+// Make Money with Xeniex Links
+function renderMakeMoneyData() {
+  let MakeMoneyDataElem = "";
+  const MakeMoneyDataCont = document.querySelector("#MakeMoneyCont");
+  const dispMakeMoneyData = () => {
+    MakeMoneyData.map((data, index) => {
+      MakeMoneyDataElem += `      
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>     
+      `;
+    });
+  };
+  dispMakeMoneyData();
+  MakeMoneyDataCont.innerHTML = MakeMoneyDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderMakeMoneyData());
+
+// Need Help Links
+function renderNeedHelpData() {
+  let NeedHelpDataElem = "";
+  const NeedHelpDataCont = document.querySelector("#NeedHelpCont");
+  const dispNeedHelpData = () => {
+    NeedHelpData.map((data, index) => {
+      NeedHelpDataElem += `      
+      <li><a class="footerlinks" href="${data.href}">${data.label}</a></li>     
+      `;
+    });
+  };
+  dispNeedHelpData();
+  NeedHelpDataCont.innerHTML = NeedHelpDataElem;
+}
+window.addEventListener("DOMContentLoaded", renderNeedHelpData());
